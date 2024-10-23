@@ -1,0 +1,25 @@
+import maleHead1 from "../../assets/head/male/BantuKnots.svg"
+import maleHead2 from "../../assets/head/male/Bear.svg"
+import maleHead3 from "../../assets/head/male/FlatTop.svg"
+import maleHead4 from "../../assets/head/male/FlatTopLong.svg"   
+import maleHead5 from "../../assets/head/male/GrayShort.svg"   
+import maleHead6 from "../../assets/head/male/hatbeanie.svg"   
+import maleHead7 from "../../assets/head/male/Mohawk.svg"   
+import maleHead8 from "../../assets/head/male/Mohawk2.svg"   
+import maleHead9 from "../../assets/head/male/NoHair1.svg"   
+import maleHead10 from "../../assets/head/male/NoHair2.svg"   
+import maleHead11 from "../../assets/head/male/NoHair3.svg"   
+import maleHead12 from "../../assets/head/male/Pomp.svg"   
+import maleHead13 from "../../assets/head/male/Shaved2.svg"   
+import maleHead14 from "../../assets/head/male/Shaved3.svg"   
+import maleHead15 from "../../assets/head/male/Short1.svg"   
+import maleHead16 from "../../assets/head/male/Short2.svg"
+import maleHead17 from "../../assets/head/male/Short4.svg" 
+import maleHead18 from "../../assets/head/male/Short5.svg"  
+import maleHead19 from "../../assets/head/male/Turban.svg"   
+import maleHead20 from "../../assets/head/male/Twists.svg"   
+import maleHead21 from "../../assets/head/male/Twists2.svg" 
+
+const maleHeadOptions = [maleHead1, maleHead2, maleHead3, maleHead4, maleHead5, maleHead6, maleHead7, maleHead8, maleHead9, maleHead10, maleHead11, maleHead12, maleHead13, maleHead14, maleHead15, maleHead16, maleHead17, maleHead18, maleHead19, maleHead20, maleHead21];
+
+export default maleHeadOptions;
