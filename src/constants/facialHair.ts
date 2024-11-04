@@ -15,6 +15,6 @@ import facialHair14 from "../assets/facialHair/Moustache8.svg"
 import facialHair15 from "../assets/facialHair/Moustache9.svg"
 import facialHair16 from "../assets/facialHair/none.svg"
 
-const facialHairOptions = [facialHair1, facialHair2, facialHair3, facialHair4, facialHair5, facialHair6, facialHair7, facialHair8, facialHair9, facialHair10, facialHair11, facialHair12, facialHair13, facialHair14, facialHair15, facialHair16];
+const facialHairOptions: string[] = [facialHair1, facialHair2, facialHair3, facialHair4, facialHair5, facialHair6, facialHair7, facialHair8, facialHair9, facialHair10, facialHair11, facialHair12, facialHair13, facialHair14, facialHair15, facialHair16];
 
 export default facialHairOptions;

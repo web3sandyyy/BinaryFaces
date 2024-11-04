@@ -8,6 +8,6 @@ import glasses7 from "../assets/accessories/none.svg"
 import glasses8 from "../assets/accessories/Sunglasses.svg"  
 import glasses9 from "../assets/accessories/Sunglasses2.svg"
 
-const glassesOptions = [glasses1, glasses2, glasses3, glasses4, glasses5, glasses6, glasses7, glasses8, glasses9];
+const glassesOptions: string[]  = [glasses1, glasses2, glasses3, glasses4, glasses5, glasses6, glasses7, glasses8, glasses9];
 
 export default glassesOptions;

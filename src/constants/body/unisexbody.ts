@@ -11,6 +11,6 @@ import unisexBody10 from "../../assets/body/unisex/TeeArmsCrossed.svg"
 import unisexBody11 from "../../assets/body/unisex/TeeSelena.svg"   
 import unisexBody12 from "../../assets/body/unisex/Turtleneck.svg"  
 
-const unisexBodyOptions = [unisexBody1, unisexBody2, unisexBody3, unisexBody4, unisexBody5, unisexBody6, unisexBody7, unisexBody8, unisexBody9, unisexBody10, unisexBody11, unisexBody12];
+const unisexBodyOptions: string[]  = [unisexBody1, unisexBody2, unisexBody3, unisexBody4, unisexBody5, unisexBody6, unisexBody7, unisexBody8, unisexBody9, unisexBody10, unisexBody11, unisexBody12];
 
 export default unisexBodyOptions;

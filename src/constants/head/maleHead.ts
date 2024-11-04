@@ -20,6 +20,6 @@ import maleHead19 from "../../assets/head/male/Turban.svg"
 import maleHead20 from "../../assets/head/male/Twists.svg"   
 import maleHead21 from "../../assets/head/male/Twists2.svg" 
 
-const maleHeadOptions = [maleHead1, maleHead2, maleHead3, maleHead4, maleHead5, maleHead6, maleHead7, maleHead8, maleHead9, maleHead10, maleHead11, maleHead12, maleHead13, maleHead14, maleHead15, maleHead16, maleHead17, maleHead18, maleHead19, maleHead20, maleHead21];
+const maleHeadOptions: string[]  = [maleHead1, maleHead2, maleHead3, maleHead4, maleHead5, maleHead6, maleHead7, maleHead8, maleHead9, maleHead10, maleHead11, maleHead12, maleHead13, maleHead14, maleHead15, maleHead16, maleHead17, maleHead18, maleHead19, maleHead20, maleHead21];
 
 export default maleHeadOptions;

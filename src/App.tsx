@@ -1,3 +1,4 @@
+import React from "react";
 import AvatarGenerator from "./AvatarGenerator";
 import "./App.css";
 
@@ -6,7 +7,7 @@ function App() {
     <div className="app-container">
       <div className="avatar-preview-container">
         <h1 className="avatar-title">Avatar Preview</h1>
-        <AvatarGenerator value=""  width={400} bgColor="#10b981" isRounded="true" onlyFace="true" border="true" borderSize={5} />
+        <AvatarGenerator value=""  width={100} bgColor="#10b981" isRounded={true} onlyFace={true} border={true} borderSize={5} />
       </div>
     </div>
   );

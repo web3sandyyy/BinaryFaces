@@ -3,7 +3,7 @@ import SHA256 from "crypto-js/sha256";
 import glassesOptions from "./constants/glasses";
 import maleBodyOptions from "./constants/body/maleBody";
 import femaleBodyOptions from "./constants/body/femaleBody";
-import unisexBodyOptions from "./constants/body/unisexBody";
+import unisexBodyOptions from "./constants/body/unisexbody";
 import maleHeadOptions from "./constants/head/maleHead";
 import femaleHeadOptions from "./constants/head/femaleHead";
 import unisexHeadOptions from "./constants/head/unisexHead";
@@ -11,6 +11,26 @@ import normalFaceOptions from "./constants/faceExpression/normalFace";
 import noGlassFaceOptions from "./constants/faceExpression/noGlasssesFace";
 import facialHairOptions from "./constants/facialHair";
 import "./AvatarGenerator.css";
+
+interface AvatarGeneratorProps {
+  value?: string;
+  isRounded?: boolean;
+  width?: number;
+  bgColor?: string;
+  onlyFace?: boolean;
+  border?: boolean;
+  borderColor?: string;
+  borderSize?: number;
+}
+
+interface AvatarParts {
+  face: string;
+  body: string;
+  head: string;
+  glasses: string | null;
+  facialHair: string | null;
+  gender: "male" | "female" | "unisex";
+}
 
 const AvatarGenerator = ({
   value = "",
@@ -21,19 +41,24 @@ const AvatarGenerator = ({
   border = false,
   borderColor = "black",
   borderSize = 2,
-}) => {
-  const getDeterministicValue = (hashSlice, options) => {
+}: AvatarGeneratorProps) => {
+  const getDeterministicValue = (
+    hashSlice: string,
+    options: string[]
+  ): string => {
     const index = parseInt(hashSlice, 16) % options.length;
     return options[index];
   };
 
-  const getGenderFromBody = (bodyAsset) => {
+  const getGenderFromBody = (
+    bodyAsset: string
+  ): "male" | "female" | "unisex" => {
     if (femaleBodyOptions.includes(bodyAsset)) return "female";
     if (maleBodyOptions.includes(bodyAsset)) return "male";
     return "unisex";
   };
 
-  const generateAvatar = () => {
+  const generateAvatar = (): AvatarParts => {
     const hash = SHA256(value).toString();
     const bodyAllOptions = [
       ...femaleBodyOptions,
@@ -43,12 +68,10 @@ const AvatarGenerator = ({
     const body = getDeterministicValue(hash.slice(0, 4), bodyAllOptions);
     const gender = getGenderFromBody(body);
 
-    let headOptions;
-    if (gender === "female") {
-      headOptions = [...femaleHeadOptions, ...unisexHeadOptions];
-    } else {
-      headOptions = [...maleHeadOptions, ...unisexHeadOptions];
-    }
+    const headOptions =
+      gender === "female"
+        ? [...femaleHeadOptions, ...unisexHeadOptions]
+        : [...maleHeadOptions, ...unisexHeadOptions];
     const head = getDeterministicValue(hash.slice(4, 8), headOptions);
 
     const face = getDeterministicValue(hash.slice(8, 12), [
@@ -56,15 +79,14 @@ const AvatarGenerator = ({
       ...normalFaceOptions,
     ]);
 
-    let glasses = "none";
-    if (normalFaceOptions.includes(face)) {
-      glasses = getDeterministicValue(hash.slice(12, 16), glassesOptions);
-    }
+    const glasses = normalFaceOptions.includes(face)
+      ? getDeterministicValue(hash.slice(12, 16), glassesOptions)
+      : "none";
 
-    let facialHair = null;
-    if (gender !== "female") {
-      facialHair = getDeterministicValue(hash.slice(16, 20), facialHairOptions);
-    }
+    const facialHair =
+      gender !== "female"
+        ? getDeterministicValue(hash.slice(16, 20), facialHairOptions)
+        : null;
 
     return { face, body, head, glasses, facialHair, gender };
   };
@@ -104,7 +126,7 @@ const AvatarGenerator = ({
             className="avatar-facial-hair"
           />
         )}
-        {avatar.glasses !== "none" && (
+        {avatar.glasses && avatar.glasses !== "none" && (
           <img src={avatar.glasses} alt="glasses" className="avatar-glasses" />
         )}
       </div>

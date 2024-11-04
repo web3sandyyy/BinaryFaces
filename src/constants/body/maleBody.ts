@@ -13,6 +13,6 @@ import maleBody12 from "../../assets/body/male/PoloandSweater.svg"
 import maleBody13 from "../../assets/body/male/StripedPocketTee.svg"  
 import maleBody14 from "../../assets/body/male/SweaterDots.svg"
 
-const maleBodyOptions = [maleBody1, maleBody2, maleBody3, maleBody4, maleBody5, maleBody6, maleBody7, maleBody8, maleBody9, maleBody10, maleBody11, maleBody12, maleBody13, maleBody14];
+const maleBodyOptions: string[]  = [maleBody1, maleBody2, maleBody3, maleBody4, maleBody5, maleBody6, maleBody7, maleBody8, maleBody9, maleBody10, maleBody11, maleBody12, maleBody13, maleBody14];
 
 export default maleBodyOptions;

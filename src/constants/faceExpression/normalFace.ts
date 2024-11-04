@@ -22,6 +22,6 @@ import normalFace21 from "../../assets/faceExpression/normal/Suspicious.svg"
 import normalFace22 from "../../assets/faceExpression/normal/Tired.svg"
 import normalFace23 from "../../assets/faceExpression/normal/VeryAngry.svg"
 
-const normalFaceOptions = [normalFace1, normalFace2, normalFace3, normalFace4, normalFace5, normalFace6, normalFace7, normalFace8, normalFace9, normalFace10, normalFace11, normalFace12, normalFace13, normalFace14, normalFace15, normalFace16, normalFace17, normalFace18, normalFace19, normalFace20, normalFace21, normalFace22, normalFace23];
+const normalFaceOptions: string[]  = [normalFace1, normalFace2, normalFace3, normalFace4, normalFace5, normalFace6, normalFace7, normalFace8, normalFace9, normalFace10, normalFace11, normalFace12, normalFace13, normalFace14, normalFace15, normalFace16, normalFace17, normalFace18, normalFace19, normalFace20, normalFace21, normalFace22, normalFace23];
 
 export default normalFaceOptions;

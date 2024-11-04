@@ -10,6 +10,6 @@ import unisexHead9 from "../../assets/head/unisex/MediumStraight.svg"
 import unisexHead10 from "../../assets/head/unisex/Shaved1.svg"   
 import unisexHead11 from "../../assets/head/unisex/Short3.svg" 
 
-const unisexHeadOptions = [unisexHead1, unisexHead2, unisexHead3, unisexHead4, unisexHead5, unisexHead6, unisexHead7, unisexHead8, unisexHead9, unisexHead10, unisexHead11];
+const unisexHeadOptions: string[]  = [unisexHead1, unisexHead2, unisexHead3, unisexHead4, unisexHead5, unisexHead6, unisexHead7, unisexHead8, unisexHead9, unisexHead10, unisexHead11];
 
 export default unisexHeadOptions;
