@@ -1,0 +1,50 @@
+.avatar-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.avatar-body {
+  position: absolute;
+  height: 60%;
+  bottom: 0;
+}
+
+.avatar-head {
+  position: absolute;
+  height: 44%;
+  top: 5%;
+  right: 26%;
+}
+
+.avatar-face {
+  position: absolute;
+  height: 23%;
+  top: 20%;
+  right: 30%;
+}
+
+.avatar-facial-hair {
+  position: absolute;
+  height: 17%;
+  top: 32%;
+  right: 33%;
+}
+
+.avatar-glasses {
+  position: absolute;
+  height: 10%;
+  top: 25%;
+  right: 31%;
+}
+
+.avatar-body,
+.avatar-head,
+.avatar-face,
+.avatar-facial-hair,
+.avatar-glasses {
+  position: absolute;
+  user-select: none;
+  pointer-events: none;
+}
