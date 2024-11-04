@@ -1,18 +1,20 @@
 {
   "name": "binary-faces",
-  "version": "1.0.2",
+  "version": "2.0.2",
   "type": "module",
   "description": "A deterministic avatar generator for generating unique avatars based on input values.",
   "main": "src/index.js",
   "exports": {
     ".": "./src/index.js"
   },
-  "files": [
-    "dist/",
-    "src/AvatarGenerator.jsx",
-    "src/AvatarGenerator.css",
-    "src/index.js"
-  ],
+"files": [
+  "dist/",
+  "src/AvatarGenerator.jsx",
+  "src/constants/",
+  "src/assets/",
+  "src/AvatarGenerator.css",
+  "src/index.js"
+],
   "private": false,
   "scripts": {
     "build": "vite build",
