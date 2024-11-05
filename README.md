@@ -8,6 +8,20 @@
 - **Customizable Styles**: Supports various customization options such as size, background color, border, and face-only view.
 - **TypeScript Support**: Full TypeScript support for type safety and intellisense.
 
+## Screenshots
+
+<div align="center">
+  <img src="./src/assets/screen-shots/screenshot1.png" width="30%" alt="Binary Faces Screenshot" />
+  <img src="./src/assets/screen-shots/screenshot2.png" width="30%" alt="Binary Faces Screenshot" />
+  <img src="./src/assets/screen-shots/screenshot3.png" width="30%" alt="Binary Faces Screenshot" />
+</div>
+<div align="center">
+  <img src="./src/assets/screen-shots/screenshot4.png" width="30%" alt="Binary Faces Screenshot" />
+  <img src="./src/assets/screen-shots/screenshot5.png" width="30%" alt="Binary Faces Screenshot" />
+  <img src="./src/assets/screen-shots/screenshot6.png" width="30%" alt="Binary Faces Screenshot" />
+</div>
+
+
 ## Installation
 
 Install the package via npm:
