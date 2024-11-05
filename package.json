@@ -1,6 +1,6 @@
 {
   "name": "binary-faces",
-  "version": "2.1.1",
+  "version": "2.2.1",
   "type": "module",
   "description": "A deterministic avatar generator for generating unique avatars based on input values.",
   "homepage": "https://binary-faces.vercel.app/",

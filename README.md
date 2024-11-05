@@ -11,14 +11,14 @@
 ## Screenshots
 
 <div align="center">
-  <img src="./src/assets/screen-shots/screenshot1.png" width="30%" alt="Binary Faces Screenshot" />
-  <img src="./src/assets/screen-shots/screenshot2.png" width="30%" alt="Binary Faces Screenshot" />
-  <img src="./src/assets/screen-shots/screenshot3.png" width="30%" alt="Binary Faces Screenshot" />
+  <img src="https://github.com/web3sandyyy/BinaryFaces/blob/main/src/assets/screen-shots/screenshot1.png" width="30%" alt="Binary Faces Screenshot" />
+  <img src="https://github.com/web3sandyyy/BinaryFaces/blob/main/src/assets/screen-shots/screenshot2.png" width="30%" alt="Binary Faces Screenshot" />
+  <img src="https://github.com/web3sandyyy/BinaryFaces/blob/main/src/assets/screen-shots/screenshot3.png" width="30%" alt="Binary Faces Screenshot" />
 </div>
 <div align="center">
-  <img src="./src/assets/screen-shots/screenshot4.png" width="30%" alt="Binary Faces Screenshot" />
-  <img src="./src/assets/screen-shots/screenshot5.png" width="30%" alt="Binary Faces Screenshot" />
-  <img src="./src/assets/screen-shots/screenshot6.png" width="30%" alt="Binary Faces Screenshot" />
+  <img src="https://github.com/web3sandyyy/BinaryFaces/blob/main/src/assets/screen-shots/screenshot4.png" width="30%" alt="Binary Faces Screenshot" />
+  <img src="https://github.com/web3sandyyy/BinaryFaces/blob/main/src/assets/screen-shots/screenshot5.png" width="30%" alt="Binary Faces Screenshot" />
+  <img src="https://github.com/web3sandyyy/BinaryFaces/blob/main/src/assets/screen-shots/screenshot6.png" width="30%" alt="Binary Faces Screenshot" />
 </div>
 
 
